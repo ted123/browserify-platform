@@ -1,2 +1,3 @@
-# browserify-platform
-Project platform
+## Browserify project platform ##
+
+more details coming soon...
