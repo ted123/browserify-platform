@@ -420,6 +420,7 @@ module.exports = Backbone.View.extend({
     },
 
     onkeypress: function (event) {
+        alert('its fridayasas');
         if (event.keyCode === 13) { // enter key pressed
             event.preventDefault();
         }

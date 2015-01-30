@@ -16,6 +16,7 @@ var vinylbuffer = require( 'vinyl-buffer' );
 var minifyCSS   = require( 'gulp-minify-css' );
 var imagemin    = require( 'gulp-imagemin' );
 var replace     = require('gulp-replace');
+var browserSync = require('browser-sync');
 
 // plugins for auto server reload
 var watchify   = require('watchify');
@@ -133,31 +134,27 @@ gulp.task( 'optimizeImg', function () {
 });
 
 // watch bundle --- http://truongtx.me/2014/08/06/using-watchify-with-gulp-for-fast-browserify-build/
-// fast compiling for dev purposes
-function bundleShare ( b ) {
-	b.bundle()
-		.pipe( vinylsource( 'bundle.js' ) )
-		.pipe( gulp.dest( './dev/js' ) );
-}
-function browserifyShare () {
-	// you need to pass these three config option to browserify
-	var b = browserify();
-	b.transform( hbsfy );
-	b = watchify( b );
-
-	b.on( 'update', function () {
-		bundleShare( b );
-	} );
-	b.add( './dev/js/app.js' );
-	bundleShare( b );
-}
 
 // Compile js for dev purposes
 gulp.task( 'bundle', function () {
-	browserifyShare();
+	return browserify( './dev/js/app.js' )
+	    	.transform( hbsfy )
+			.bundle()
+			.pipe( vinylsource( 'bundle.js' ) )
+			.pipe( gulp.dest( './dev/js' ) )
 } );
 
 // generate bundle file every new file changes
 gulp.task( 'watch', function () {
-	gulp.watch( './dev/js/**/*', [ 'bundle' ] );
+	gulp.watch( './dev/js/**/*', [ 'bundle', browserSync.reload ] );
 } );
+
+// browser-sync task for starting the server.
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "./"
+        }
+    });
+    gulp.watch( [ './dev/js/**/*', './dev/css/**/*'], [ 'bundle', browserSync.reload ] );
+});

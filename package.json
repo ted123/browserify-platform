@@ -8,6 +8,7 @@
     "hbsfy": ""
   },
   "devDependencies": {
+    "browser-sync": "^2.0.0-rc1",
     "gulp": "^3.8.10",
     "gulp-eslint": "^0.2.2",
     "gulp-if": "^1.2.5",
