@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"./dev/js/app.js":[function(require,module,exports){
 var $ = require('jquery');
 var Backbone = require('backbone');
 Backbone.$ = $;
@@ -12,7 +12,7 @@ $("body").on("click", ".back-button", function (event) {
 });
 
 Backbone.history.start();
-},{"./router":3,"backbone":13,"jquery":22}],2:[function(require,module,exports){
+},{"./router":"/Users/Ted/projects101/browserify-platform/dev/js/router.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/models/memory/employee.js":[function(require,module,exports){
 'use strict';
 var Backbone = require('backbone');
 var	$        = require('jquery');
@@ -122,7 +122,7 @@ module.exports = {
 };
 
 
-},{"backbone":13,"jquery":22}],3:[function(require,module,exports){
+},{"backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/router.js":[function(require,module,exports){
 var $ = require('jquery'),
     Backbone = require('backbone');
 
@@ -172,7 +172,7 @@ module.exports = Backbone.Router.extend({
 
 });
 
-},{"./models/memory/employee":2,"./utils/pageslider":8,"./views/Employee":9,"./views/Home":11,"./views/Reports":12,"backbone":13,"jquery":22}],4:[function(require,module,exports){
+},{"./models/memory/employee":"/Users/Ted/projects101/browserify-platform/dev/js/models/memory/employee.js","./utils/pageslider":"/Users/Ted/projects101/browserify-platform/dev/js/utils/pageslider.js","./views/Employee":"/Users/Ted/projects101/browserify-platform/dev/js/views/Employee.js","./views/Home":"/Users/Ted/projects101/browserify-platform/dev/js/views/Home.js","./views/Reports":"/Users/Ted/projects101/browserify-platform/dev/js/views/Reports.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/Employee.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partials,data) {
@@ -226,7 +226,7 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
     + "</p><div class=\"action-icon icon-mail\"></div></a></li>\n        </ul>\n    </div>\n</div>";
 },"useData":true});
 
-},{"hbsfy/runtime":21}],5:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/EmployeeList.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partials,data) {
@@ -251,14 +251,14 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
   return buffer + "</ul>";
 },"useData":true});
 
-},{"hbsfy/runtime":21}],6:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/Home.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<div class=\"topcoat-navigation-bar\">\n    <div class=\"topcoat-navigation-bar__item center full\">\n        <h1 class=\"topcoat-navigation-bar__title\">Employee Directory</h1>\n    </div>\n</div>\n<div class=\"search-bar\">\n    <input type=\"search\" placeholder=\"search\" class=\"topcoat-search-input search-key\" style=\"width:100%;\">\n</div>\n<div class=\"topcoat-list__container scroller\" style=\"top:138px;\"></div>";
   },"useData":true});
 
-},{"hbsfy/runtime":21}],7:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/Reports.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -278,7 +278,7 @@ module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"
     + "</h2>\n</div>\n\n<div class=\"topcoat-list__container scroller\" style=\"top:170px;\"></div>";
 },"useData":true});
 
-},{"hbsfy/runtime":21}],8:[function(require,module,exports){
+},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/utils/pageslider.js":[function(require,module,exports){
 /* Notes:
  * - History management is currently done using window.location.hash.  This could easily be changed to use Push State instead.
  * - jQuery dependency for now. This could also be easily removed.
@@ -341,7 +341,7 @@ module.exports = function PageSlider(container) {
     }
 
 }
-},{"jquery":22}],9:[function(require,module,exports){
+},{"jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/Employee.js":[function(require,module,exports){
 var $                   = require('jquery'),
     Backbone            = require('backbone'),
     template            = require("../templates/Employee.hbs");
@@ -361,7 +361,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"../templates/Employee.hbs":4,"backbone":13,"jquery":22}],10:[function(require,module,exports){
+},{"../templates/Employee.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/Employee.hbs","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/EmployeeList.js":[function(require,module,exports){
 var $ = require('jquery'),
     Backbone = require('backbone'),
     template = require("../templates/EmployeeList.hbs");
@@ -383,7 +383,7 @@ module.exports = Backbone.View.extend({
     }
 
 });
-},{"../templates/EmployeeList.hbs":5,"backbone":13,"jquery":22}],11:[function(require,module,exports){
+},{"../templates/EmployeeList.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/EmployeeList.hbs","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/Home.js":[function(require,module,exports){
 var Backbone = require('backbone'),
     $ = require('jquery'),
     Backbone = require('backbone'),
@@ -420,14 +420,13 @@ module.exports = Backbone.View.extend({
     },
 
     onkeypress: function (event) {
-        alert('its fridayasas');
         if (event.keyCode === 13) { // enter key pressed
             event.preventDefault();
         }
     }
 
 });
-},{"../models/memory/employee":2,"../templates/Home.hbs":6,"./EmployeeList":10,"backbone":13,"jquery":22}],12:[function(require,module,exports){
+},{"../models/memory/employee":"/Users/Ted/projects101/browserify-platform/dev/js/models/memory/employee.js","../templates/Home.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/Home.hbs","./EmployeeList":"/Users/Ted/projects101/browserify-platform/dev/js/views/EmployeeList.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/Reports.js":[function(require,module,exports){
 var $ = require('jquery'),
     Backbone = require('backbone'),
     EmployeeListView = require('./EmployeeList'),
@@ -447,7 +446,7 @@ module.exports = Backbone.View.extend({
     }
 
 });
-},{"../templates/Reports.hbs":7,"./EmployeeList":10,"backbone":13,"jquery":22}],13:[function(require,module,exports){
+},{"../templates/Reports.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/Reports.hbs","./EmployeeList":"/Users/Ted/projects101/browserify-platform/dev/js/views/EmployeeList.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js":[function(require,module,exports){
 //     Backbone.js 1.1.2
 
 //     (c) 2010-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -2057,7 +2056,7 @@ module.exports = Backbone.View.extend({
 
 }));
 
-},{"underscore":23}],14:[function(require,module,exports){
+},{"underscore":"/Users/Ted/projects101/browserify-platform/node_modules/underscore/underscore.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars.runtime.js":[function(require,module,exports){
 "use strict";
 /*globals Handlebars: true */
 var base = require("./handlebars/base");
@@ -2093,7 +2092,7 @@ Handlebars.create = create;
 Handlebars['default'] = Handlebars;
 
 exports["default"] = Handlebars;
-},{"./handlebars/base":15,"./handlebars/exception":16,"./handlebars/runtime":17,"./handlebars/safe-string":18,"./handlebars/utils":19}],15:[function(require,module,exports){
+},{"./handlebars/base":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/base.js","./handlebars/exception":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js","./handlebars/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/runtime.js","./handlebars/safe-string":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/safe-string.js","./handlebars/utils":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/base.js":[function(require,module,exports){
 "use strict";
 var Utils = require("./utils");
 var Exception = require("./exception")["default"];
@@ -2325,7 +2324,7 @@ var createFrame = function(object) {
   return frame;
 };
 exports.createFrame = createFrame;
-},{"./exception":16,"./utils":19}],16:[function(require,module,exports){
+},{"./exception":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js":[function(require,module,exports){
 "use strict";
 
 var errorProps = ['description', 'fileName', 'lineNumber', 'message', 'name', 'number', 'stack'];
@@ -2354,7 +2353,7 @@ function Exception(message, node) {
 Exception.prototype = new Error();
 
 exports["default"] = Exception;
-},{}],17:[function(require,module,exports){
+},{}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/runtime.js":[function(require,module,exports){
 "use strict";
 var Utils = require("./utils");
 var Exception = require("./exception")["default"];
@@ -2548,7 +2547,7 @@ exports.noop = noop;function initData(context, data) {
   }
   return data;
 }
-},{"./base":15,"./exception":16,"./utils":19}],18:[function(require,module,exports){
+},{"./base":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/base.js","./exception":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/safe-string.js":[function(require,module,exports){
 "use strict";
 // Build out our basic SafeString type
 function SafeString(string) {
@@ -2560,7 +2559,7 @@ SafeString.prototype.toString = function() {
 };
 
 exports["default"] = SafeString;
-},{}],19:[function(require,module,exports){
+},{}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js":[function(require,module,exports){
 "use strict";
 /*jshint -W004 */
 var SafeString = require("./safe-string")["default"];
@@ -2649,15 +2648,15 @@ exports.isEmpty = isEmpty;function appendContextPath(contextPath, id) {
 }
 
 exports.appendContextPath = appendContextPath;
-},{"./safe-string":18}],20:[function(require,module,exports){
+},{"./safe-string":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/safe-string.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/runtime.js":[function(require,module,exports){
 // Create a simple path alias to allow browserify to resolve
 // the runtime on a supported path.
 module.exports = require('./dist/cjs/handlebars.runtime');
 
-},{"./dist/cjs/handlebars.runtime":14}],21:[function(require,module,exports){
+},{"./dist/cjs/handlebars.runtime":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars.runtime.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js":[function(require,module,exports){
 module.exports = require("handlebars/runtime")["default"];
 
-},{"handlebars/runtime":20}],22:[function(require,module,exports){
+},{"handlebars/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/runtime.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
  * http://jquery.com/
@@ -11864,7 +11863,7 @@ return jQuery;
 
 }));
 
-},{}],23:[function(require,module,exports){
+},{}],"/Users/Ted/projects101/browserify-platform/node_modules/underscore/underscore.js":[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -13281,4 +13280,4 @@ return jQuery;
   }
 }.call(this));
 
-},{}]},{},[1]);
+},{}]},{},["./dev/js/app.js"]);

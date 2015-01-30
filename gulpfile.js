@@ -110,13 +110,13 @@ gulp.task( 'browserify', function () {
 	    	.transform( hbsfy )
 			.bundle()
 			.pipe( vinylsource( 'bundle.js' ) )
-			.pipe( gulp.dest( './dev/js' ) )
+			.pipe( gulp.dest( './dev/src' ) )
 			.pipe( vinylbuffer() )
 			//.pipe( sourcemaps.init( { loadMaps : true } ) ) // uncomment to enable source mapping
 			.pipe( uglify() )
 			//.pipe( sourcemaps.write( './' ) ) // uncomment to enable source mapping
 			.pipe( replace( /'dev'/g ,'production' ) ) // remove dev reference
-    		.pipe( gulp.dest('./production/js' ) );
+    		.pipe( gulp.dest('./production/src' ) );
 } );
 
 // Compile css for gulp
@@ -134,27 +134,37 @@ gulp.task( 'optimizeImg', function () {
 });
 
 // watch bundle --- http://truongtx.me/2014/08/06/using-watchify-with-gulp-for-fast-browserify-build/
-
-// Compile js for dev purposes
-gulp.task( 'bundle', function () {
-	return browserify( './dev/js/app.js' )
-	    	.transform( hbsfy )
-			.bundle()
+// fast compiling for dev purposes
+gulp.task( 'server', [ 'cssWatch', 'browser-sync' ], function () {
+	var b = browserify({
+		cache: {},
+   		packageCache: {},
+    	fullPaths: true
+	});
+	b.transform( hbsfy );
+	b.add( './dev/js/app.js' );
+	b = watchify( b );
+	b.on( 'update', function () {
+		b.bundle()
 			.pipe( vinylsource( 'bundle.js' ) )
-			.pipe( gulp.dest( './dev/js' ) )
+			.pipe( gulp.dest( './dev/src' ) );
+		browserSync.reload();
+	} );
+
+	b.bundle()
+		.pipe( vinylsource( 'bundle.js' ) )
+		.pipe( gulp.dest( './dev/src' ) );
 } );
 
-// generate bundle file every new file changes
-gulp.task( 'watch', function () {
-	gulp.watch( './dev/js/**/*', [ 'bundle', browserSync.reload ] );
-} );
+//watch css
+gu
 
 // browser-sync task for starting the server.
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
     browserSync({
         server: {
-            baseDir: "./"
+            baseDir : "./",
+            index   : 'dev.html'
         }
     });
-    gulp.watch( [ './dev/js/**/*', './dev/css/**/*'], [ 'bundle', browserSync.reload ] );
 });
