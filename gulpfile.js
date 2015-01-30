@@ -133,13 +133,28 @@ gulp.task( 'optimizeImg', function () {
 });
 
 // watch bundle --- http://truongtx.me/2014/08/06/using-watchify-with-gulp-for-fast-browserify-build/
+// fast compiling for dev purposes
+function bundleShare ( b ) {
+	b.bundle()
+		.pipe( vinylsource( 'bundle.js' ) )
+		.pipe( gulp.dest( './dev/js' ) );
+}
+function browserifyShare () {
+	// you need to pass these three config option to browserify
+	var b = browserify();
+	b.transform( hbsfy );
+	b = watchify( b );
+
+	b.on( 'update', function () {
+		bundleShare( b );
+	} );
+	b.add( './dev/js/app.js' );
+	bundleShare( b );
+}
+
 // Compile js for dev purposes
 gulp.task( 'bundle', function () {
-    return browserify( './dev/js/app.js' )
-			.transform( hbsfy )
-			.bundle()
-			.pipe( vinylsource( 'bundle.js' ) )
-			.pipe( gulp.dest( './dev/js' ) );
+	browserifyShare();
 } );
 
 // generate bundle file every new file changes
