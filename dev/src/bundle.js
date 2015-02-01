@@ -12,7 +12,7 @@ $("body").on("click", ".back-button", function (event) {
 });
 
 Backbone.history.start();
-},{"./router":"/Users/Ted/projects101/browserify-platform/dev/js/router.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/models/memory/employee.js":[function(require,module,exports){
+},{"./router":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\router.js","backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\models\\memory\\employee.js":[function(require,module,exports){
 'use strict';
 var Backbone = require('backbone');
 var	$        = require('jquery');
@@ -122,7 +122,7 @@ module.exports = {
 };
 
 
-},{"backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/router.js":[function(require,module,exports){
+},{"backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\router.js":[function(require,module,exports){
 var $ = require('jquery'),
     Backbone = require('backbone');
 
@@ -172,7 +172,7 @@ module.exports = Backbone.Router.extend({
 
 });
 
-},{"./models/memory/employee":"/Users/Ted/projects101/browserify-platform/dev/js/models/memory/employee.js","./utils/pageslider":"/Users/Ted/projects101/browserify-platform/dev/js/utils/pageslider.js","./views/Employee":"/Users/Ted/projects101/browserify-platform/dev/js/views/Employee.js","./views/Home":"/Users/Ted/projects101/browserify-platform/dev/js/views/Home.js","./views/Reports":"/Users/Ted/projects101/browserify-platform/dev/js/views/Reports.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/Employee.hbs":[function(require,module,exports){
+},{"./models/memory/employee":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\models\\memory\\employee.js","./utils/pageslider":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\utils\\pageslider.js","./views/Employee":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\Employee.js","./views/Home":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\Home.js","./views/Reports":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\Reports.js","backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\Employee.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partials,data) {
@@ -181,28 +181,28 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
     + escapeExpression(((helper = (helper = helpers.managerId || (depth0 != null ? depth0.managerId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"managerId","hash":{},"data":data}) : helper)))
     + "\"><p>View Manager</p><p>"
     + escapeExpression(((helper = (helper = helpers.managerName || (depth0 != null ? depth0.managerName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"managerName","hash":{},"data":data}) : helper)))
-    + "</p><div class=\"action-icon icon-manager\"/></a></li>\n";
+    + "</p><div class=\"action-icon icon-manager\"/></a></li>\r\n";
 },"3":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "            <li class=\"topcoat-list__item\"><a href=\"#employees/"
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
     + "/reports\"><p>View Direct Reports</p><p>"
     + escapeExpression(((helper = (helper = helpers.reports || (depth0 != null ? depth0.reports : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"reports","hash":{},"data":data}) : helper)))
-    + "</p><div class=\"action-icon icon-reports\"/></a></li>\n";
+    + "</p><div class=\"action-icon icon-reports\"/></a></li>\r\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div class=\"topcoat-navigation-bar\">\n    <div class=\"topcoat-navigation-bar__item left quarter\">\n        <a class=\"topcoat-icon-button--quiet back-button\" href=\"#\">\n          <span class=\"topcoat-icon topcoat-icon--back\"></span>\n        </a>\n    </div>\n    <div class=\"topcoat-navigation-bar__item center half\">\n        <h1 class=\"topcoat-navigation-bar__title\">Employees</h1>\n    </div>\n</div>\n\n<div class='details'>\n    <img class='employee-image' src='./dev/img/"
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div class=\"topcoat-navigation-bar\">\r\n    <div class=\"topcoat-navigation-bar__item left quarter\">\r\n        <a class=\"topcoat-icon-button--quiet back-button\" href=\"#\">\r\n          <span class=\"topcoat-icon topcoat-icon--back\"></span>\r\n        </a>\r\n    </div>\r\n    <div class=\"topcoat-navigation-bar__item center half\">\r\n        <h1 class=\"topcoat-navigation-bar__title\">Employees</h1>\r\n    </div>\r\n</div>\r\n\r\n<div class='details'>\r\n    <img class='employee-image' src='./dev/img/"
     + escapeExpression(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"firstName","hash":{},"data":data}) : helper)))
     + "_"
     + escapeExpression(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"lastName","hash":{},"data":data}) : helper)))
-    + ".jpg'/>\n    <h1>"
+    + ".jpg'/>\r\n    <h1>"
     + escapeExpression(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"firstName","hash":{},"data":data}) : helper)))
     + " "
     + escapeExpression(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"lastName","hash":{},"data":data}) : helper)))
-    + "</h1>\n    <h2>"
+    + "</h1>\r\n    <h2>"
     + escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"title","hash":{},"data":data}) : helper)))
-    + "</h2>\n    <h2>"
+    + "</h2>\r\n    <h2>"
     + escapeExpression(((helper = (helper = helpers.city || (depth0 != null ? depth0.city : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"city","hash":{},"data":data}) : helper)))
-    + "</h2>\n    <div class=\"topcoat-list__container scroller\">\n        <ul class=\"topcoat-list list actions\">\n";
+    + "</h2>\r\n    <div class=\"topcoat-list__container scroller\">\r\n        <ul class=\"topcoat-list list actions\">\r\n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.managerId : depth0), {"name":"if","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.reports : depth0), {"name":"if","hash":{},"fn":this.program(3, data),"inverse":this.noop,"data":data});
@@ -211,74 +211,74 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
     + escapeExpression(((helper = (helper = helpers.officePhone || (depth0 != null ? depth0.officePhone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"officePhone","hash":{},"data":data}) : helper)))
     + "\"><p>Call Office</p><p>"
     + escapeExpression(((helper = (helper = helpers.officePhone || (depth0 != null ? depth0.officePhone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"officePhone","hash":{},"data":data}) : helper)))
-    + "</p><div class=\"action-icon icon-call\"></div></a></li>\n            <li class=\"topcoat-list__item\"><a href=\"tel:"
+    + "</p><div class=\"action-icon icon-call\"></div></a></li>\r\n            <li class=\"topcoat-list__item\"><a href=\"tel:"
     + escapeExpression(((helper = (helper = helpers.cellPhone || (depth0 != null ? depth0.cellPhone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"cellPhone","hash":{},"data":data}) : helper)))
     + "\"><p>Call Cell</p><p>"
     + escapeExpression(((helper = (helper = helpers.cellPhone || (depth0 != null ? depth0.cellPhone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"cellPhone","hash":{},"data":data}) : helper)))
-    + "</p><div class=\"action-icon icon-call\"></div></a></li>\n            <li class=\"topcoat-list__item\"><a href=\"sms:"
+    + "</p><div class=\"action-icon icon-call\"></div></a></li>\r\n            <li class=\"topcoat-list__item\"><a href=\"sms:"
     + escapeExpression(((helper = (helper = helpers.cellPhone || (depth0 != null ? depth0.cellPhone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"cellPhone","hash":{},"data":data}) : helper)))
     + "\"><p>SMS</p><p>"
     + escapeExpression(((helper = (helper = helpers.cellPhone || (depth0 != null ? depth0.cellPhone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"cellPhone","hash":{},"data":data}) : helper)))
-    + "</p><div class=\"action-icon icon-sms\"></div></a></li>\n            <li class=\"topcoat-list__item\"><a href=\"mailto:"
+    + "</p><div class=\"action-icon icon-sms\"></div></a></li>\r\n            <li class=\"topcoat-list__item\"><a href=\"mailto:"
     + escapeExpression(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"email","hash":{},"data":data}) : helper)))
     + "\"><p>Email</p><p>"
     + escapeExpression(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"email","hash":{},"data":data}) : helper)))
-    + "</p><div class=\"action-icon icon-mail\"></div></a></li>\n        </ul>\n    </div>\n</div>";
+    + "</p><div class=\"action-icon icon-mail\"></div></a></li>\r\n        </ul>\r\n    </div>\r\n</div>";
 },"useData":true});
 
-},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/EmployeeList.hbs":[function(require,module,exports){
+},{"hbsfy/runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\hbsfy\\runtime.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\EmployeeList.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "    <li class=\"topcoat-list__item\">\n        <a href=\"#employees/"
+  return "    <li class=\"topcoat-list__item\">\r\n        <a href=\"#employees/"
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n            <img src='./dev/img/"
+    + "\">\r\n            <img src='./dev/img/"
     + escapeExpression(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"firstName","hash":{},"data":data}) : helper)))
     + "_"
     + escapeExpression(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"lastName","hash":{},"data":data}) : helper)))
-    + ".jpg'/>\n            <p>"
+    + ".jpg'/>\r\n            <p>"
     + escapeExpression(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"firstName","hash":{},"data":data}) : helper)))
     + " "
     + escapeExpression(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"lastName","hash":{},"data":data}) : helper)))
-    + "</p>\n            <p>"
+    + "</p>\r\n            <p>"
     + escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"title","hash":{},"data":data}) : helper)))
-    + "</p>\n        </a>\n    </li>\n";
+    + "</p>\r\n        </a>\r\n    </li>\r\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, buffer = "<ul class=\"topcoat-list list\">\n";
+  var stack1, buffer = "<ul class=\"topcoat-list list\">\r\n";
   stack1 = helpers.each.call(depth0, depth0, {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   return buffer + "</ul>";
 },"useData":true});
 
-},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/Home.hbs":[function(require,module,exports){
+},{"hbsfy/runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\hbsfy\\runtime.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\Home.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"topcoat-navigation-bar\">\n    <div class=\"topcoat-navigation-bar__item center full\">\n        <h1 class=\"topcoat-navigation-bar__title\">Employee Directory</h1>\n    </div>\n</div>\n<div class=\"search-bar\">\n    <input type=\"search\" placeholder=\"search\" class=\"topcoat-search-input search-key\" style=\"width:100%;\">\n</div>\n<div class=\"topcoat-list__container scroller\" style=\"top:138px;\"></div>";
+  return "<div class=\"topcoat-navigation-bar\">\r\n    <div class=\"topcoat-navigation-bar__item center full\">\r\n        <h1 class=\"topcoat-navigation-bar__title\">Employee Directory</h1>\r\n    </div>\r\n</div>\r\n<div class=\"search-bar\">\r\n    <input type=\"search\" placeholder=\"search\" class=\"topcoat-search-input search-key\" style=\"width:100%;\">\r\n</div>\r\n<div class=\"topcoat-list__container scroller\" style=\"top:138px;\"></div>";
   },"useData":true});
 
-},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/templates/Reports.hbs":[function(require,module,exports){
+},{"hbsfy/runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\hbsfy\\runtime.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\Reports.hbs":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "<div class=\"topcoat-navigation-bar\">\n    <div class=\"topcoat-navigation-bar__item left quarter\">\n        <a class=\"topcoat-icon-button--quiet back-button\" href=\"#\">\n            <span class=\"topcoat-icon topcoat-icon--back\"></span>\n        </a>\n    </div>\n    <div class=\"topcoat-navigation-bar__item center half\">\n        <h1 class=\"topcoat-navigation-bar__title\">Direct Reports</h1>\n    </div>\n</div>\n\n<div class=\"details\">\n    <img src='./dev/img/"
+  return "<div class=\"topcoat-navigation-bar\">\r\n    <div class=\"topcoat-navigation-bar__item left quarter\">\r\n        <a class=\"topcoat-icon-button--quiet back-button\" href=\"#\">\r\n            <span class=\"topcoat-icon topcoat-icon--back\"></span>\r\n        </a>\r\n    </div>\r\n    <div class=\"topcoat-navigation-bar__item center half\">\r\n        <h1 class=\"topcoat-navigation-bar__title\">Direct Reports</h1>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"details\">\r\n    <img src='./dev/img/"
     + escapeExpression(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"firstName","hash":{},"data":data}) : helper)))
     + "_"
     + escapeExpression(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"lastName","hash":{},"data":data}) : helper)))
-    + ".jpg'/>\n    <h1>"
+    + ".jpg'/>\r\n    <h1>"
     + escapeExpression(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"firstName","hash":{},"data":data}) : helper)))
     + " "
     + escapeExpression(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"lastName","hash":{},"data":data}) : helper)))
-    + "</h1>\n    <h2>"
+    + "</h1>\r\n    <h2>"
     + escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"title","hash":{},"data":data}) : helper)))
-    + "</h2>\n    <h2>"
+    + "</h2>\r\n    <h2>"
     + escapeExpression(((helper = (helper = helpers.city || (depth0 != null ? depth0.city : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"city","hash":{},"data":data}) : helper)))
-    + "</h2>\n</div>\n\n<div class=\"topcoat-list__container scroller\" style=\"top:170px;\"></div>";
+    + "</h2>\r\n</div>\r\n\r\n<div class=\"topcoat-list__container scroller\" style=\"top:170px;\"></div>";
 },"useData":true});
 
-},{"hbsfy/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/utils/pageslider.js":[function(require,module,exports){
+},{"hbsfy/runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\hbsfy\\runtime.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\utils\\pageslider.js":[function(require,module,exports){
 /* Notes:
  * - History management is currently done using window.location.hash.  This could easily be changed to use Push State instead.
  * - jQuery dependency for now. This could also be easily removed.
@@ -341,7 +341,7 @@ module.exports = function PageSlider(container) {
     }
 
 }
-},{"jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/Employee.js":[function(require,module,exports){
+},{"jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\Employee.js":[function(require,module,exports){
 var $                   = require('jquery'),
     Backbone            = require('backbone'),
     template            = require("../templates/Employee.hbs");
@@ -361,7 +361,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"../templates/Employee.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/Employee.hbs","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/EmployeeList.js":[function(require,module,exports){
+},{"../templates/Employee.hbs":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\Employee.hbs","backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\EmployeeList.js":[function(require,module,exports){
 var $ = require('jquery'),
     Backbone = require('backbone'),
     template = require("../templates/EmployeeList.hbs");
@@ -383,7 +383,7 @@ module.exports = Backbone.View.extend({
     }
 
 });
-},{"../templates/EmployeeList.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/EmployeeList.hbs","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/Home.js":[function(require,module,exports){
+},{"../templates/EmployeeList.hbs":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\EmployeeList.hbs","backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\Home.js":[function(require,module,exports){
 var Backbone = require('backbone'),
     $ = require('jquery'),
     Backbone = require('backbone'),
@@ -426,7 +426,7 @@ module.exports = Backbone.View.extend({
     }
 
 });
-},{"../models/memory/employee":"/Users/Ted/projects101/browserify-platform/dev/js/models/memory/employee.js","../templates/Home.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/Home.hbs","./EmployeeList":"/Users/Ted/projects101/browserify-platform/dev/js/views/EmployeeList.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/dev/js/views/Reports.js":[function(require,module,exports){
+},{"../models/memory/employee":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\models\\memory\\employee.js","../templates/Home.hbs":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\Home.hbs","./EmployeeList":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\EmployeeList.js","backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\Reports.js":[function(require,module,exports){
 var $ = require('jquery'),
     Backbone = require('backbone'),
     EmployeeListView = require('./EmployeeList'),
@@ -446,7 +446,7 @@ module.exports = Backbone.View.extend({
     }
 
 });
-},{"../templates/Reports.hbs":"/Users/Ted/projects101/browserify-platform/dev/js/templates/Reports.hbs","./EmployeeList":"/Users/Ted/projects101/browserify-platform/dev/js/views/EmployeeList.js","backbone":"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js","jquery":"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/backbone/backbone.js":[function(require,module,exports){
+},{"../templates/Reports.hbs":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\templates\\Reports.hbs","./EmployeeList":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\dev\\js\\views\\EmployeeList.js","backbone":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js","jquery":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\backbone\\backbone.js":[function(require,module,exports){
 //     Backbone.js 1.1.2
 
 //     (c) 2010-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -2056,7 +2056,7 @@ module.exports = Backbone.View.extend({
 
 }));
 
-},{"underscore":"/Users/Ted/projects101/browserify-platform/node_modules/underscore/underscore.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars.runtime.js":[function(require,module,exports){
+},{"underscore":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\underscore\\underscore.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars.runtime.js":[function(require,module,exports){
 "use strict";
 /*globals Handlebars: true */
 var base = require("./handlebars/base");
@@ -2092,7 +2092,7 @@ Handlebars.create = create;
 Handlebars['default'] = Handlebars;
 
 exports["default"] = Handlebars;
-},{"./handlebars/base":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/base.js","./handlebars/exception":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js","./handlebars/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/runtime.js","./handlebars/safe-string":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/safe-string.js","./handlebars/utils":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/base.js":[function(require,module,exports){
+},{"./handlebars/base":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\base.js","./handlebars/exception":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\exception.js","./handlebars/runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\runtime.js","./handlebars/safe-string":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\safe-string.js","./handlebars/utils":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\utils.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\base.js":[function(require,module,exports){
 "use strict";
 var Utils = require("./utils");
 var Exception = require("./exception")["default"];
@@ -2324,7 +2324,7 @@ var createFrame = function(object) {
   return frame;
 };
 exports.createFrame = createFrame;
-},{"./exception":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js":[function(require,module,exports){
+},{"./exception":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\exception.js","./utils":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\utils.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\exception.js":[function(require,module,exports){
 "use strict";
 
 var errorProps = ['description', 'fileName', 'lineNumber', 'message', 'name', 'number', 'stack'];
@@ -2353,7 +2353,7 @@ function Exception(message, node) {
 Exception.prototype = new Error();
 
 exports["default"] = Exception;
-},{}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/runtime.js":[function(require,module,exports){
+},{}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\runtime.js":[function(require,module,exports){
 "use strict";
 var Utils = require("./utils");
 var Exception = require("./exception")["default"];
@@ -2547,7 +2547,7 @@ exports.noop = noop;function initData(context, data) {
   }
   return data;
 }
-},{"./base":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/base.js","./exception":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/safe-string.js":[function(require,module,exports){
+},{"./base":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\base.js","./exception":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\exception.js","./utils":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\utils.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\safe-string.js":[function(require,module,exports){
 "use strict";
 // Build out our basic SafeString type
 function SafeString(string) {
@@ -2559,7 +2559,7 @@ SafeString.prototype.toString = function() {
 };
 
 exports["default"] = SafeString;
-},{}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/utils.js":[function(require,module,exports){
+},{}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\utils.js":[function(require,module,exports){
 "use strict";
 /*jshint -W004 */
 var SafeString = require("./safe-string")["default"];
@@ -2648,15 +2648,15 @@ exports.isEmpty = isEmpty;function appendContextPath(contextPath, id) {
 }
 
 exports.appendContextPath = appendContextPath;
-},{"./safe-string":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars/safe-string.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/runtime.js":[function(require,module,exports){
+},{"./safe-string":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars\\safe-string.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\runtime.js":[function(require,module,exports){
 // Create a simple path alias to allow browserify to resolve
 // the runtime on a supported path.
 module.exports = require('./dist/cjs/handlebars.runtime');
 
-},{"./dist/cjs/handlebars.runtime":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/dist/cjs/handlebars.runtime.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/hbsfy/runtime.js":[function(require,module,exports){
+},{"./dist/cjs/handlebars.runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\dist\\cjs\\handlebars.runtime.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\hbsfy\\runtime.js":[function(require,module,exports){
 module.exports = require("handlebars/runtime")["default"];
 
-},{"handlebars/runtime":"/Users/Ted/projects101/browserify-platform/node_modules/handlebars/runtime.js"}],"/Users/Ted/projects101/browserify-platform/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
+},{"handlebars/runtime":"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\handlebars\\runtime.js"}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\jquery\\dist\\jquery.js":[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
  * http://jquery.com/
@@ -11863,7 +11863,7 @@ return jQuery;
 
 }));
 
-},{}],"/Users/Ted/projects101/browserify-platform/node_modules/underscore/underscore.js":[function(require,module,exports){
+},{}],"c:\\Users\\dedit_000\\Desktop\\Projects101\\browserify-platform\\node_modules\\underscore\\underscore.js":[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors

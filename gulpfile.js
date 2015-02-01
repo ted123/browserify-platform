@@ -148,7 +148,11 @@ gulp.task( 'server', [ 'cssWatch', 'browser-sync' ], function () {
 		b.bundle()
 			.pipe( vinylsource( 'bundle.js' ) )
 			.pipe( gulp.dest( './dev/src' ) );
+	} );
+
+	b.on( 'time', function () {
 		browserSync.reload();
+		console.log( 'ended' );
 	} );
 
 	b.bundle()
@@ -157,7 +161,9 @@ gulp.task( 'server', [ 'cssWatch', 'browser-sync' ], function () {
 } );
 
 //watch css
-gu
+gulp.task( 'cssWatch', function () {
+	gulp.watch( './dev/css/*', browserSync.reload );
+} );
 
 // browser-sync task for starting the server.
 gulp.task('browser-sync', function () {
